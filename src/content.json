@@ -1,0 +1,407 @@
+{
+  "documentRevision": "V4-R7",
+  "contentVersion": "openai-desktop-v4-simple-20261029-r1",
+  "title": "ChatGPT 寵物勇者島",
+  "subtitle": "三關六題・火球探險",
+  "author": "VividHsu（PM）",
+  "language": "zh-Hant-TW",
+  "sources": [
+    {
+      "id": "OAI-01",
+      "title": "ChatGPT desktop app",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "OAI-02",
+      "title": "Use ChatGPT",
+      "url": "https://learn.chatgpt.com/docs/use-chatgpt",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "OAI-03",
+      "title": "Projects and chats",
+      "url": "https://learn.chatgpt.com/docs/projects",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "OAI-04",
+      "title": "Work with files",
+      "url": "https://learn.chatgpt.com/docs/artifacts-viewer",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "pets": [
+    {
+      "id": "fire",
+      "name": "Fireball 小火球",
+      "symbol": "🔥",
+      "description": "充滿活力的冒險夥伴"
+    }
+  ],
+  "stages": [
+    {
+      "id": "S01",
+      "index": 0,
+      "name": "啟航燈塔",
+      "short": "啟航",
+      "topic": "安裝登入與 Chat／Work 入口",
+      "accent": "#DE8A62",
+      "questionIds": [
+        "Q01",
+        "Q02"
+      ],
+      "boss": {
+        "name": "迷途船長",
+        "symbol": "🐙",
+        "appearance": "珊瑚色圓潤章魚船長、船長帽、羅盤與四隻短觸手，站在碼頭附近的沙色圓台。",
+        "greeting": "第一次打開 ChatGPT 桌面版，要怎麼開始？只是問問題和要完成一份成果，入口一樣嗎？",
+        "position": [
+          -5,
+          1.8
+        ]
+      },
+      "dialoguePoint": [
+        -5,
+        3.6
+      ],
+      "card": {
+        "id": "C01",
+        "title": "開始使用桌面版",
+        "text": "從官方入口安裝並登入；問答可用 Chat，需要可檢查的完整成果時選 Work（若已提供）。",
+        "sourceIds": [
+          "OAI-01",
+          "OAI-02"
+        ]
+      }
+    },
+    {
+      "id": "S02",
+      "index": 1,
+      "name": "溝通燈塔",
+      "short": "溝通",
+      "topic": "提供檔案與指定修改",
+      "accent": "#6A9380",
+      "questionIds": [
+        "Q03",
+        "Q04"
+      ],
+      "boss": {
+        "name": "碎念書怪",
+        "symbol": "📗",
+        "appearance": "綠色厚書身體、紙頁鬍鬚、卷軸手臂與短腳，身旁有散落的空白紙卡。",
+        "greeting": "檔案準備好了，怎麼交代成果？有一小部分不對，怎麼讓 ChatGPT 改到正確的位置？",
+        "position": [
+          0,
+          -3.8
+        ]
+      },
+      "dialoguePoint": [
+        0,
+        -1.9
+      ],
+      "card": {
+        "id": "C02",
+        "title": "附上資料，指出修改處",
+        "text": "提供任務需要的檔案，說明成果格式；修改時指出位置與方向，支援的預覽可用註記。",
+        "sourceIds": [
+          "OAI-02",
+          "OAI-04"
+        ]
+      }
+    },
+    {
+      "id": "S03",
+      "index": 2,
+      "name": "知識燈塔",
+      "short": "知識",
+      "topic": "專案整理與本機資料夾",
+      "accent": "#B7A05F",
+      "questionIds": [
+        "Q05",
+        "Q06"
+      ],
+      "boss": {
+        "name": "迷霧樹精",
+        "symbol": "🌳",
+        "appearance": "土黃色樹幹身體、枝條手臂、葉子眉毛與書架形腹部，周圍有低透明度薄霧。",
+        "greeting": "同一活動有好多份成果，聊天要放哪裡？我電腦裡的資料夾又要怎麼提供？",
+        "position": [
+          5,
+          1
+        ]
+      },
+      "dialoguePoint": [
+        3.5,
+        1
+      ],
+      "card": {
+        "id": "C03",
+        "title": "用專案整理脈絡",
+        "text": "相關成果放在同一專案、各開聚焦的聊天；要讀取本機資料夾時，先確認本機存取可用並附加需要的資料夾。",
+        "sourceIds": [
+          "OAI-03"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    [
+      [
+        -6,
+        5
+      ],
+      [
+        -6,
+        4.4
+      ],
+      [
+        -5,
+        3.6
+      ]
+    ],
+    [
+      [
+        -5,
+        3.6
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        -2,
+        -1.9
+      ],
+      [
+        0,
+        -1.9
+      ]
+    ],
+    [
+      [
+        0,
+        -1.9
+      ],
+      [
+        2,
+        -1.6
+      ],
+      [
+        3.5,
+        1
+      ]
+    ],
+    [
+      [
+        3.5,
+        1
+      ],
+      [
+        2.5,
+        3
+      ],
+      [
+        0,
+        3.6
+      ]
+    ]
+  ],
+  "commonDialogue": {
+    "accept": "我準備好了，一起回想課堂重點！",
+    "correct": "你找到了這個觀念的重點。",
+    "incorrect": "這個地方容易混淆，先看看提示，再想一次。",
+    "cleared": "你把觀念說清楚了，這座燈塔就交給你。",
+    "depart": "記住了！往下一站前進。"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "stage": 0,
+      "prompt": "新電腦還沒有 ChatGPT 桌面版，第一次使用時，哪個做法符合官方入門流程？",
+      "options": [
+        {
+          "id": "Q01-A",
+          "text": "只要把遊戲資料夾命名為 ChatGPT，就等於安裝完成。"
+        },
+        {
+          "id": "Q01-B",
+          "text": "從官方下載入口安裝桌面 App，開啟後登入 ChatGPT 帳號，再開始聊天或選擇專案。"
+        },
+        {
+          "id": "Q01-C",
+          "text": "先取得 OpenAI API 金鑰，否則不能使用桌面 App 的一般聊天。"
+        }
+      ],
+      "answer": "Q01-B",
+      "explanation": "官方桌面版入門流程是安裝、開啟並登入 ChatGPT 帳號、選擇工作位置，再傳送訊息。一般入門流程不以取得 API 金鑰為前置要求；資料夾名稱也不能代替 App 安裝。",
+      "appliesTo": "Windows／macOS 的 ChatGPT Desktop App 入門。此題說的是實際 App，本複習遊戲本身免登入。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-01",
+          "sections": [
+            "Get started with the desktop app"
+          ]
+        }
+      ],
+      "teachingTip": "由講師展示官方下載入口及 App 起始畫面，指出登入、聊天與專案入口；不在共用畫面顯示學員帳號密碼。"
+    },
+    {
+      "id": "Q02",
+      "stage": 0,
+      "prompt": "桌面 App 已提供 Chat 與 Work。你要依幾份附件完成一份可檢查的會議簡報，較適合怎麼開始？",
+      "options": [
+        {
+          "id": "Q02-A",
+          "text": "切到 Work，說明簡報目的、對象與需要的成果，並提供附件。"
+        },
+        {
+          "id": "Q02-B",
+          "text": "只用 Chat 問一句「什麼是簡報」，就代表簡報檔已完成。"
+        },
+        {
+          "id": "Q02-C",
+          "text": "一定要切到 Codex 並先寫程式，才能製作簡報。"
+        }
+      ],
+      "answer": "Q02-A",
+      "explanation": "官方將 Chat 用於問答與來回討論，Work 用於把較大的任務推進到可檢查的成果，例如製作簡報。Codex 偏重開發者介面與技術細節，不是一般簡報工作的必要入口。",
+      "appliesTo": "已提供 Chat／Work 切換的桌面版；不表示每個帳號都有相同功能。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-02",
+          "sections": [
+            "Choose how you want to work"
+          ]
+        }
+      ],
+      "teachingTip": "在輸入區上方找出 Chat／Work 切換，口頭比較「問一個問題」與「完成一份簡報」兩種任務。"
+    },
+    {
+      "id": "Q03",
+      "stage": 1,
+      "prompt": "你要在桌面 App 請 ChatGPT 整理電腦裡的差旅明細，哪個交辦方式最完整？",
+      "options": [
+        {
+          "id": "Q03-A",
+          "text": "只輸入檔名，假設 ChatGPT 已經讀過電腦裡的檔案。"
+        },
+        {
+          "id": "Q03-B",
+          "text": "不提供資料，只說「幫我整理得好看一點」。"
+        },
+        {
+          "id": "Q03-C",
+          "text": "附上差旅明細，要求按日期列出項目與金額、加總支出，並標出無法確認的資料。"
+        }
+      ],
+      "answer": "Q03-C",
+      "explanation": "官方建議提供任務需要的資料、補充影響成果的背景，並說明輸出格式。附上檔案才能讓這次聊天取得該資料；只說檔名不代表已完成資料提供。此題的差旅格式是教學情境，不是 App 固定內建範本。",
+      "appliesTo": "可附加檔案的桌面版聊天；只使用練習資料，不必提供真實個人差旅資料。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-02",
+          "sections": [
+            "Talk to ChatGPT naturally",
+            "Attach files"
+          ]
+        }
+      ],
+      "teachingTip": "展示附加一份練習檔，再用一句話寫出「資料來源、想要的成果、需要核對的地方」。"
+    },
+    {
+      "id": "Q04",
+      "stage": 1,
+      "prompt": "桌面 App 的簡報預覽已支援註記。只有第三頁圖表的標籤太小，其他內容都合適，下一步怎麼做？",
+      "options": [
+        {
+          "id": "Q04-A",
+          "text": "刪掉整份簡報與聊天，重新開始。"
+        },
+        {
+          "id": "Q04-B",
+          "text": "在預覽中指出該圖表並加註記，要求放大標籤、保留其他內容。"
+        },
+        {
+          "id": "Q04-C",
+          "text": "只輸入「不對」，不說要改哪裡。"
+        }
+      ],
+      "answer": "Q04-B",
+      "explanation": "官方說明桌面版的註記可把特定區域帶入修改要求，讓 ChatGPT 聚焦修訂而不必重做整份成果。若該預覽未提供註記，也可在聊天中明確說出頁碼、圖表位置與修改方向；這裡的第三頁是練習成果頁碼，不是題庫來源頁碼。",
+      "appliesTo": "已支援註記的桌面版簡報預覽；不推論所有檔案格式都能註記。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-04",
+          "sections": [
+            "Refine files with annotations"
+          ]
+        }
+      ],
+      "teachingTip": "以練習簡報標示一個圖表，示範「這裡改什麼、哪些部分保留」的修改要求。"
+    },
+    {
+      "id": "Q05",
+      "stage": 2,
+      "prompt": "接下來一個月都要籌備同一場活動，會陸續製作議程、邀請文與成果報告，怎麼整理較適合？",
+      "options": [
+        {
+          "id": "Q05-A",
+          "text": "把相關資料與聊天放在同一專案，針對不同成果各開一個聚焦的聊天。"
+        },
+        {
+          "id": "Q05-B",
+          "text": "所有事情擠在同一個聊天，連不相關的工作也混在一起。"
+        },
+        {
+          "id": "Q05-C",
+          "text": "只把聊天置頂，就當作已經提供所有活動資料。"
+        }
+      ],
+      "answer": "Q05-A",
+      "explanation": "官方建議持續進行、產生多個成果或共用來源的工作使用專案，並為不同成果建立分開的聊天。置頂只影響顯示位置，不會增加 ChatGPT 可用的資料或存取權。",
+      "appliesTo": "桌面版的 Projects 專案介面；具體檔案來源依專案類型而定。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-03",
+          "sections": [
+            "Work in a project",
+            "Organize projects and chats"
+          ]
+        }
+      ],
+      "teachingTip": "展示一個活動專案內的「議程」「邀請文」「成果報告」三個聊天，說明專案共用脈絡與個別聊天目的。"
+    },
+    {
+      "id": "Q06",
+      "stage": 2,
+      "prompt": "桌面 App 已啟用本機檔案存取。你希望某個本機專案能讀取指定的練習資料夾，應怎麼設定？",
+      "options": [
+        {
+          "id": "Q06-A",
+          "text": "把資料夾路徑寫在聊天標題裡，就不必再附加資料夾。"
+        },
+        {
+          "id": "Q06-B",
+          "text": "把電腦裡全部資料夾改成一樣的名稱。"
+        },
+        {
+          "id": "Q06-C",
+          "text": "開啟專案選單的 Edit project，透過 Add folder 附加需要的資料夾，再確認選到的範圍。"
+        }
+      ],
+      "answer": "Q06-C",
+      "explanation": "官方桌面版說明可在 Edit project 中用 Add folder 附加本機資料夾。附加資料夾會提供該專案可使用的本機檔案範圍，仍受實際權限與政策限制；聊天標題或對話同步不等於資料夾已提供。",
+      "appliesTo": "支援本機專案與資料夾存取的桌面版；不把雲端 ChatGPT 專案或聊天同步視為自動上傳整個本機資料夾。",
+      "sourceRefs": [
+        {
+          "sourceId": "OAI-03",
+          "sections": [
+            "Use local projects for folders and codebases"
+          ]
+        }
+      ],
+      "teachingTip": "只用教師準備的空白或假資料資料夾示範附加，讓學員先說出將提供哪個範圍。"
+    }
+  ]
+}
